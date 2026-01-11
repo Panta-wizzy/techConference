@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | TechConnect Conference</title>
+  <link rel="stylesheet" href="/about/about.css" />
+  <link rel="shortcut icon" href="/images/ChatGPT Image Jan 10, 2026, 04_40_50 PM.png" type="image/x-icon">
+</head>
+<body>
+
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">TechConnect <img src="/gif/Animate_this_photo_202601110239.gif" style="border-radius: 50%;" width="30px" height="30px" alt="techconnect-logo"></div>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav class="nav" id="nav">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/schedule/schedual.html">Schedule</a></li>
+      <li><a href="/speakers/speakers.html">Speakers</a></li>
+      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="/register/register.html" class="btn">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- About Header -->
+  <section class="about-header">
+    <h1>About TechConnect 2026</h1>
+    <p>Empowering innovators, developers, and tech enthusiasts to connect, learn, and grow.</p>
+  </section>
+
+  <!-- About Content -->
+  <section class="about-content">
+    <div class="about-text">
+      <h2>Our Mission</h2>
+      <p>
+        TechConnect Conference aims to bring together technology leaders, developers, and students
+        to explore the latest trends in software development, AI, cybersecurity, and cloud technologies.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        To create a global platform for knowledge sharing, networking, and inspiring innovation
+        across the tech community.
+      </p>
+
+      <h2>Why Attend?</h2>
+      <ul>
+        <li>Learn from top industry experts</li>
+        <li>Network with professionals & peers</li>
+        <li>Discover new tools and technologies</li>
+        <li>Participate in hands-on workshops</li>
+      </ul>
+    </div>
+
+    <div class="about-image">
+      <img src="/logo/PH9rBkAbQNyrBwMyQzbT6A.webp" alt="Conference Illustration">
+    </div>
+  </section>
+
+  <!-- Team / Organizers Section -->
+<section class="team-section">
+  <h2>Meet the Organizers</h2>
+  <p>The people behind TechConnect Conference 2026</p>
+
+  <div class="team-container">
+
+    <div class="team-card">
+      <div class="card-inner">
+        <!-- Front of Card -->
+        <div class="card-front">
+          <img src="/gif/Animate_this_photo_202601110239.gif" alt="Alice Johnson">
+          <h3>Alice Johnson</h3>
+          <p>Conference Director</p>
+          <span>Responsible for overall planning & coordination</span>
+        </div>
+        <!-- Back of Card -->
+        <div class="card-back">
+          <h3>Contact Alice</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><img src="/icons/43-twitter-512.png" width="50px" height="50px" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="/icons/facebook-app-symbol.png" width="50px" height="50px" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="/icons/38-instagram-2-512.png" width="50px" height="50px" alt="Instagram"></a>
+          </div>
+          <button class="contact-btn">Contact Organizer</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="/gif/Animate_this_photo_202601110239.gif" alt="Mark Thompson">
+          <h3>Mark Thompson</h3>
+          <p>Technical Lead</p>
+          <span>Manages tech setup, website, and live streaming</span>
+        </div>
+        <div class="card-back">
+          <h3>Contact Mark</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><img src="/icons/43-twitter-512.png" width="50px" height="50px" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="/icons/facebook-app-symbol.png" width="50px" height="50px" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="/icons/38-instagram-2-512.png" width="50px" height="50px" alt="Instagram"></a>
+          </div>
+          <button class="contact-btn">Contact Organizer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for other team members -->
+  </div>
+</section>
+
+<!-- Team Section Script -->
+<script src="/about/team.js"></script>
+
+<!-- Navbar Script -->
+<script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("nav");
+  
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+  });
+  
+</script>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>TechConnect</h2>
+      <p>
+        TechConnect Conference brings innovators, developers,
+        and tech leaders together to shape the future of technology.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/schedule/schedual.html">Schedule</a></li>
+        <li><a href="/speakers/speakers.html">Speakers</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to receive conference updates.</p>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="/icons/43-twitter-512.png" width="50px" height="50px" alt="Twitter"></a>
+        <a href="#"><img src="/icons/facebook-app-symbol.png" width="50px" height="50px" alt="Facebook"></a>
+        <a href="#"><img src="/icons/38-instagram-2-512.png" width="50px" height="50px" alt="Instagram"></a>
+        <a href="#"><img src="/icons/tiktok.png" width="50px" height="50px" alt="tiktok"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Extra Links -->
+<div class="footer-extra">
+  <div class="legal-links">
+    <a href="/privacy/privacy.html" target="_blank">Privacy Policy</a>
+    <span>|</span>
+    <a href="/privacy/terms.html" target="_blank">Terms & Conditions</a>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top">↑</button>
+</div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 TechConnect Conference. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="/js/home.js"></script>
+
+</body>
+</html>
