@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | TechConnect Conference</title>
+  <link rel="stylesheet" href="/register/register.css" />
+  <link rel="shortcut icon" href="/images/ChatGPT Image Jan 10, 2026, 04_40_50 PM.png" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Navbar -->
+<header class="navbar">
+  <div class="logo">TechConnect <img src="/gif/Animate_this_photo_202601110239.gif" style="border-radius: 50%;" width="30px" height="30px" alt="techconnect-logo"></div>
+
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav class="nav" id="nav">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/schedule/schedual.html">Schedule</a></li>
+      <li><a href="/speakers/speakers.html">Speakers</a></li>
+      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="/register/register.html" class="btn">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Page Container -->
+  <section class="register-container">
+
+    <div class="register-card">
+      <h1>Register for TechConnect 2026</h1>
+      <p>Secure your seat at the biggest tech conference</p>
+
+      <form class="register-form" id="registerForm">
+       <div class="form-group">
+         <label>Full Name</label>
+         <input type="text" id="name" placeholder="Enter your full name">
+       </div>
+     
+       <div class="form-group">
+         <label>Email Address</label>
+         <input type="email" id="email" placeholder="Enter your email">
+       </div>
+     
+       <div class="form-group">
+         <label>Phone Number</label>
+         <input type="tel" id="phone" placeholder="Enter your phone number">
+       </div>
+     
+       <div class="form-group">
+         <label>Profession</label>
+         <select id="profession">
+           <option value="">Select your profession</option>
+           <option>Student</option>
+           <option>Developer</option>
+           <option>Designer</option>
+           <option>IT Professional</option>
+         </select>
+       </div>
+     
+       <div class="form-group">
+         <label>Ticket Type</label>
+         <select id="ticket">
+           <option value="">Select ticket type</option>
+           <option>Free</option>
+           <option>Standard</option>
+           <option>VIP</option>
+         </select>
+       </div>
+     
+       <button type="submit" class="register-btn">Register Now</button>
+       </form>
+       <script src="/register/register.js"></script>
+     
+    </div>
+  </section>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+    
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+    });
+    
+  </script>
+
+    
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>TechConnect</h2>
+      <p>
+        TechConnect Conference brings innovators, developers,
+        and tech leaders together to shape the future of technology.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/schedule/schedual.html">Schedule</a></li>
+        <li><a href="/speakers/speakers.html">Speakers</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to receive conference updates.</p>
+      <form>
+        <input type="email" id="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="/icons/43-twitter-512.png" width="50px" height="50px" alt="Twitter"></a>
+        <a href="#"><img src="/icons/facebook-app-symbol.png" width="50px" height="50px" alt="Facebook"></a>
+        <a href="#"><img src="/icons/38-instagram-2-512.png" width="50px" height="50px" alt="Instagram"></a>
+        <a href="#"><img src="/icons/tiktok.png" width="50px" height="50px" alt="tiktok"></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Extra Links -->
+<div class="footer-extra">
+  <div class="legal-links">
+    <a href="/privacy/privacy.html" target="_blank">Privacy Policy</a>
+    <span>|</span>
+    <a href="/privacy/terms.html" target="_blank">Terms & Conditions</a>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top">↑</button>
+</div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 TechConnect Conference. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+  <script src="/js/home.js"></script>
+
+</body>
+</html>

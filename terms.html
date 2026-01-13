@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms & Conditions | TechConnect</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+ <header class="navbar">
+  <div class="logo">TechConnect <img src="/gif/Animate_this_photo_202601110239.gif" style="border-radius: 50%;" width="30px" height="30px" alt="techconnect-logo"></div>
+
+  <div class="menu-toggle" id="menu-toggle">
+    ☰
+  </div>
+
+  <nav class="nav" id="nav">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about/about.html">About</a></li>
+      <li><a href="/schedule/schedual.html">Schedule</a></li>
+      <li><a href="/speakers/speakers.html">Speakers</a></li>
+      <li><a href="/contact/contact.html">Contact</a></li>
+      <li><a href="/register/register.html" target="_parent" class="btn">Register</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="legal-page">
+  <div class="legal-container">
+    <h1>Terms & Conditions</h1>
+    <p class="updated">Last updated: January 2026</p>
+
+    <div class="legal-card">
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        By accessing or using TechConnect Conference services,
+        you agree to be bound by these terms.
+      </p>
+    </div>
+
+    <div class="legal-card">
+      <h2>2. Registration & Attendance</h2>
+      <p>
+        Attendees must provide accurate information during registration.
+        Tickets are non-transferable unless stated otherwise.
+      </p>
+    </div>
+
+    <div class="legal-card">
+      <h2>3. Code of Conduct</h2>
+      <p>
+        We expect all participants to behave respectfully and
+        professionally during the event.
+      </p>
+    </div>
+
+    <div class="legal-card">
+      <h2>4. Intellectual Property</h2>
+      <p>
+        All website content and conference materials belong to TechConnect
+        and may not be reproduced without permission.
+      </p>
+    </div>
+
+    <div class="legal-card">
+      <h2>5. Limitation of Liability</h2>
+      <p>
+        TechConnect is not responsible for any loss or damage arising
+        from participation in the event.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for Menu Toggle -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav");
+    
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      menuToggle.textContent = nav.classList.contains("active") ? "✖" : "☰";
+    });
+
+  </script>
+
+
+<!---scroll Animation using javascript---->
+    <script>
+        const legalCards = document.querySelectorAll(".legal-card");
+
+        const legalObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        }, { threshold: 0.2 });
+        
+        legalCards.forEach(card => legalObserver.observe(card));
+        
+    </script>
+
+<!-- Footer -->
+   <!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h2>TechConnect</h2>
+      <p>
+        TechConnect Conference brings innovators, developers,
+        and tech leaders together to shape the future of technology.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about/about.html">About</a></li>
+        <li><a href="/schedule/schedual.html">Schedule</a></li>
+        <li><a href="/speakers/speakers.html">Speakers</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-newsletter">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to receive conference updates.</p>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="/icons/38-instagram-2-512.png" width="50px" height="50px" alt=""></a>
+        <a href="#"><img src="/icons/43-twitter-512.png" width="50px" height="50px" alt=""></a>
+        <a href="#"><img src="/icons/facebook-app-symbol.png" width="50px" height="50px" alt=""></a>
+        <a href="#"><img src="/icons/tiktok.png" width="50px" height="50px" alt=""></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Extra Links -->
+<div class="footer-extra">
+  <div class="legal-links">
+    <a href="/privacy/privacy.html" target="_blank">Privacy Policy</a>
+    <span>|</span>
+    <a href="/privacy/terms.html" target="_blank">Terms & Conditions</a>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top">↑</button>
+</div>
+
+
+  <div class="footer-bottom">
+    <p>© 2026 TechConnect Conference. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

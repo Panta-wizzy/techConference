@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Successful | TechConnect</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<section class="ticket-page">
+  <div class="ticket-card" id="ticket">
+    <h2>🎉 Registration Successful!</h2>
+
+    <div class="ticket-info">
+      <p><strong>Event:</strong> TechConnect Conference 2026</p>
+      <p><strong>Name:</strong> <span id="userName">Attendee</span></p>
+      <p><strong>Email:</strong> <span id="userEmail">example@email.com</span></p>
+      <p><strong>Ticket ID:</strong> <span id="ticketId"></span></p>
+      <p><strong>Date:</strong> March 15–17, 2026</p>
+      <p><strong>Location:</strong> Virtual / Onsite</p>
+    </div>
+
+    <button onclick="downloadTicket()">Download Ticket</button>
+  </div>
+</section>
+
+<script src="/js/home.js"></script>
+<script>
+  // Generate ticket on load
+  document.getElementById("ticketId").textContent = generateTicketID();
+
+  // Optional: load user data from localStorage
+  document.getElementById("userName").textContent =
+    localStorage.getItem("name") || "Attendee Conference";
+
+  document.getElementById("userEmail").textContent =
+    localStorage.getItem("email") || "example@gmail.com";
+</script>
+
+</body>
+</html>

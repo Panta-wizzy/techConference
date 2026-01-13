@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Successful</title>
+  <link rel="stylesheet" href="/register/success.css" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/images/ChatGPT Image Jan 10, 2026, 04_40_50 PM.png" type="image/x-icon">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<body>
+
+  
+  <div class="success-container">
+    <div class="success-card">
+      <h1>🎉 Registration Successful!</h1>
+      <p>Thank you for registering for TechConnect 2026.</p>
+      <p>We look forward to seeing you at the event.</p>
+      <a href="/index.html" class="home-btn">Back to Home</a>
+    </div>
+  </div> 
+
+  <!-----
+  <section class="ticket-page">
+  <div class="ticket-card" id="ticket">
+    <h2>🎉 Registration Successful!</h2>
+
+  
+    <div class="ticket-info">
+      <p><strong>Event:</strong> TechConnect Conference 2026</p>
+      <p><strong>Name:</strong> <span id="userName">Attendee</span></p>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+      <p><strong>Ticket ID:</strong> <span id="ticketId"></span></p>
+      <p><strong>Date:</strong> March 15–17, 2026</p>
+      <p><strong>Location:</strong> Virtual / Onsite</p>
+    </div> 
+
+    <div class="ticket-info">
+      <p><strong>Event:</strong> TechConnect Conference 2026</p>
+      <p><strong>Name:</strong> <span id="userName"></span></p>
+      <p><strong>Email:</strong> <span id="userEmail"></span></p>
+      <p><strong>Ticket ID:</strong> <span id="ticketId"></span></p>
+    </div> 
+    
+    <div id="qrcode" class="qr-box"></div>
+
+
+    <button onclick="downloadTicket()">Download Ticket</button>
+    <a href="/index.html" class="home-btn">Back to Home</a>
+  </div>
+</section>  ----->
+
+<script src="/js/home.js"></script>
+<script>
+  // Generate ticket on load
+  document.getElementById("ticketId").textContent = generateTicketID();
+
+  // Optional: load user data from localStorage
+  document.getElementById("userName").textContent =
+    localStorage.getItem("name") || "Attendee";
+  
+
+  document.getElementById("userEmail").textContent =
+    localStorage.getItem("email") || email;
+</script>
+
+
+<script>
+  const ticketId = generateTicketID();
+  const name = localStorage.getItem("name")  || "Attendee Conference";
+  const email = localStorage.getItem("email") || "example@gmail.com";
+
+  document.getElementById("ticketId").textContent = ticketId;
+  document.getElementById("userName").textContent = name;
+  document.getElementById("userEmail").textContent = email;
+
+  // QR Code data
+  const qrData = `
+    Event: TechConnect Conference 2026
+    Name: ${name}
+    Email: ${email}
+    Ticket ID: ${ticketId}
+  `;
+
+  new QRCode(document.getElementById("qrcode"), {
+    text: qrData,
+    width: 120,
+    height: 120,
+  });
+</script>
+
+
+
+
+</body>
+</html>
