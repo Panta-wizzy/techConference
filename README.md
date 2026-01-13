@@ -34,7 +34,7 @@ TechConference 2026 is designed to foster knowledge sharing, networking, and col
 ## Event Details
 - **Date:** June 15-17, 2026  
 - **Location:** Silicon Valley Convention Center, CA  
-- **Website:** [www.techconference2026.com](http://www.techconference2026.com)
+- **Website:** [www.techconference2026.com](http://techconnection.netlify.app)
 
 ---
 
@@ -58,7 +58,7 @@ Some confirmed speakers:
 ---
 
 ## Registration
-Register online via our [registration page](http://www.techconference2026.com/register).  
+Register online via our [registration page](http://techconnection.netlify.app/register/register)
 
 **Early Bird Discount:** Available until March 31, 2026.
 
@@ -90,6 +90,3 @@ For full details, visit our [Code of Conduct page](http://www.techconference2026
 ---
 
 *We look forward to seeing you at TechConference 2026!* 🎉
-
-
-
